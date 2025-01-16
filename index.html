@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Data</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Shop Data</h1>
+    <div id="filter-container">
+      <select id="size-filter">
+        <option value="">All Sizes</option>
+      </select>
+      <select id="color-filter">
+        <option value="">All Colors</option>
+      </select>
+      <select id="sort-by">
+        <option value="">Sort By</option>
+        <option value="date-asc">Release Date (Ascending)</option>
+        <option value="date-desc">Release Date (Descending)</option>
+        <option value="price-asc">Price (Ascending)</option>
+        <option value="price-desc">Price (Descending)</option>
+      </select>
+      <select id="category-filter" hidden></select>
+      <select id="brand-filter"></select>
+      <button id="filter-button" onclick="filterProducts()">Search</button>
+      <button onclick="window.location.reload()" id="reload">
+        Reset filter
+      </button>
+    </div>
+
+    <ul id="category-list"></ul>
+    <div id="shop-data"></div>
+    <div class="formulas">
+      <h3>Formulas</h3>
+      <ul>
+        <li>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>x</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mo>&#x2212;</mo>
+                <mi>b</mi>
+                <mo>&#xB1;</mo>
+                <msqrt>
+                  <msup>
+                    <mi>b</mi>
+                    <mn>2</mn>
+                  </msup>
+                  <mo>&#x2212;</mo>
+                  <mn>4</mn>
+                  <mi>a</mi>
+                  <mi>c</mi>
+                </msqrt>
+              </mrow>
+              <mrow>
+                <mn>2</mn>
+                <mi>a</mi>
+              </mrow>
+            </mfrac>
+          </math>
+        </li>
+        <li>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>(</mi>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>b</mi>
+              <mi>)</mi>
+              <msup>
+                <mi>n</mi>
+              </msup>
+              <mo>=</mo>
+              <mrow>
+                <mi>Σ</mi>
+                <msub>
+                  <mi>k</mi>
+                  <mi>0</mi>
+                </msub>
+                <mi>n</mi>
+                <mfrac>
+                  <mrow>
+                    <mi>n</mi>
+                    <mi>!</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>k</mi>
+                    <mi>!</mi>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>-</mo>
+                      <mi>k</mi>
+                    </mrow>
+                    <mi>!</mi>
+                  </mrow>
+                </mfrac>
+                <mi>a</mi>
+                <msup>
+                  <mi>n</mi>
+                  <mo>-</mo>
+                  <mi>k</mi>
+                </msup>
+                <mi>b</mi>
+                <msup>
+                  <mi>k</mi>
+                </msup>
+              </mrow>
+            </mrow>
+          </math>
+        </li>
+        <li>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>∫</mo>
+              <mi>f</mi>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>)</mo>
+              <mi>d</mi>
+              <mi>x</mi>
+            </mrow>
+          </math>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

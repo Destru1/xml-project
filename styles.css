@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+  background-color: #f8f8f8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 20px;
+  color: #1b1b1b;
+}
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: calc(100% / 4 - 20px);
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 300px;
+
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.card .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+.card .price .no-discount {
+  color: #333;
+}
+
+.card .previous-price {
+  text-decoration: line-through;
+  color: #bdc3c7;
+  margin-left: 5px;
+}
+
+.card .discount {
+  background-color: #e74c3c;
+  color: #ffffff;
+  font-weight: bold;
+  position: absolute;
+  font-size: 14px;
+  padding: 6px 10px;
+  top: 16px;
+  left: 16px;
+  border-radius: 12px;
+}
+
+.card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card .tags span {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  margin: 2px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.card .tags span:hover {
+  background-color: #555;
+  color: #ffffff;
+}
+
+.card .colors {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.more-colors {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #333;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card .colors-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card .sizes span {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.card .sizes span:last-child {
+  margin-right: 0;
+}
+
+.card .sizes span:hover {
+  background-color: #555;
+  color: #ffffff;
+}
+
+.card .rating {
+  font-size: 14px;
+  color: #f39c12;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+.card .rating span {
+  font-weight: bold;
+  color: #333;
+}
+
+.card .compact-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.card .compact-row p {
+  margin: 0;
+}
+
+.card.disabled {
+  pointer-events: none;
+  position: relative;
+}
+.card.disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.card .out-of-stock {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  font-size: 16px;
+}
+
+#filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#filter-container select,
+#filter-container input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+#filter-container select:focus,
+#filter-container input:focus {
+  border-color: #333;
+}
+
+#filter-button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#filter-button:hover {
+  background-color: #555;
+}
+
+#category-list,
+#name-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#category-list li,
+#name-list li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#category-list button,
+#name-list button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#category-list button:hover,
+#name-list button:hover {
+  background: #333;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#reload {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#reload:hover {
+  background: #333;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.formulas {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.formulas::after {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  content: "";
+  width: calc(100% + 40px);
+  height: 1px;
+  background: #1b1b1b;
+}
+.formulas h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.formulas ul {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.formulas ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.formulas ul li:last-of-type {
+  margin-right: 0;
+}
+.formulas ul li math {
+  font-size: 32px;
+  color: #333;
+  margin-left: 10px;
+}

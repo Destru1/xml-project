@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="shop.xsl"?>
+<shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shop.xsd">
+
+    <product>
+        <name>T-shirt</name>
+        <price>40.00</price>
+        <quantity>5</quantity>
+        <category>Apparel</category>
+        <subcategory>Casual</subcategory>
+        <material>Cotton</material>
+        <brand>Calvin Klein</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.5">
+            <reviews>256</reviews>
+        </rating>
+        <release_date>2024-01-01</release_date>
+        <tags>
+            <tag>summer</tag>
+            <tag>casual</tag>
+            <tag>cotton</tag>
+        </tags>
+        <colors>
+            <color>Red</color>
+            <color>LightGray</color>
+            <color>DarkSlateGray</color>
+            <color>Black</color>
+            <color>Olive</color>
+        </colors>
+        <sizes>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/d0cd11fc1caed41b426e5248dda2e7dc.jpg?</image_url>
+    </product>
+
+    <product>
+        <name>Shoes</name>
+        <price>80.00</price>
+        <previous_price>100.00</previous_price>
+        <quantity>15</quantity>
+        <category>Footwear</category>
+        <subcategory>Casual</subcategory>
+        <material>Leather</material>
+        <brand>GUESS</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.8">
+            <reviews>1342</reviews>
+        </rating>
+        <release_date>2023-11-15</release_date>
+        <tags>
+            <tag>leather</tag>
+            <tag>casual</tag>
+        </tags>
+        <colors>
+            <color>White</color>
+            <color>Black</color>
+        </colors>
+        <sizes>
+            <size>40</size>
+            <size>41</size>
+            <size>42</size>
+            <size>44</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/8a66926f874cb4b7d63c97fdc64a6ccb.png?bg=fff</image_url>
+    </product>
+
+    <product>
+        <name>Jeans</name>
+        <price>120.00</price>
+        <quantity>20</quantity>
+        <category>Apparel</category>
+        <subcategory>Casual</subcategory>
+        <material>Denim</material>
+        <brand>Levi's</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.7">
+            <reviews>500</reviews>
+        </rating>
+        <release_date>2023-05-05</release_date>
+        <tags>
+            <tag>casual</tag>
+            <tag>denim</tag>
+            <tag>comfortable</tag>
+        </tags>
+        <colors>
+            <color>LightSteelBlue</color>
+        </colors>
+        <sizes>
+            <size>30 x 30</size>
+            <size>30 x 34</size>
+            <size>31 x 30</size>
+            <size>38 x 32</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/72afa882f17fdf29eef77820bb785f9e.png?bg=FFF</image_url>
+    </product>
+
+    <product>
+        <name>Hoodie</name>
+        <price>25.00</price>
+        <quantity>10</quantity>
+        <category>Outerwear</category>
+        <subcategory>Casual</subcategory>
+        <material>Cotton Blend</material>
+        <brand>Adidas</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.6">
+            <reviews>150</reviews>
+        </rating>
+        <release_date>2023-08-10</release_date>
+        <tags>
+            <tag>comfortable</tag>
+            <tag>casual</tag>
+            <tag>hoodie</tag>
+        </tags>
+        <colors>
+            <color>Black</color>
+        </colors>
+        <sizes>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/6875ea107351783b6b86cb9861e03f92.png?bg=FFF</image_url>
+    </product>
+
+
+    <product>
+        <name>Running Sneakers</name>
+        <price>250.99</price>
+        <previous_price>399.99</previous_price>
+        <quantity>25</quantity>
+        <category>Footwear</category>
+        <subcategory>Sports</subcategory>
+        <material>Mesh</material>
+        <brand>Adidas</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.7">
+            <reviews>350</reviews>
+        </rating>
+        <release_date>2023-10-05</release_date>
+        <tags>
+            <tag>running</tag>
+            <tag>sports</tag>
+            <tag>breathable</tag>
+        </tags>
+        <colors>
+            <color>White</color>
+        </colors>
+        <sizes>
+            <size>41</size>
+            <size>43</size>
+            <size>46</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/f80b96bf75d1276820155fdde6fc43dc.jpg?bg=FFF</image_url>
+    </product>
+    <product>
+        <name>Shorts</name>
+        <price>15.99</price>
+        <quantity>0</quantity>
+        <category>Apparel</category>
+        <subcategory>Casual</subcategory>
+        <material>Cotton</material>
+        <brand>JACK JONES</brand>
+        <in_stock>false</in_stock>
+        <rating average="4.4">
+            <reviews>150</reviews>
+        </rating>
+        <release_date>2023-06-20</release_date>
+        <tags>
+            <tag>summer</tag>
+            <tag>casual</tag>
+            <tag>comfort</tag>
+        </tags>
+        <colors>
+            <color>LightGray</color>
+        </colors>
+        <sizes>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/b82afe1e1489569a8bc6c51a7dced400.png?bg=FFF</image_url>
+    </product>
+
+    <product>
+        <name>Jacket</name>
+        <price>299.99</price>
+        <previous_price>359.99</previous_price>
+        <quantity>12</quantity>
+        <category>Outerwear</category>
+        <subcategory>Winter</subcategory>
+        <material>Polyester</material>
+        <brand>The North Face</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.9">
+            <reviews>320</reviews>
+        </rating>
+        <release_date>2023-10-01</release_date>
+        <tags>
+            <tag>outdoor</tag>
+            <tag>winter</tag>
+            <tag>warm</tag>
+        </tags>
+        <colors>
+            <color>Silver</color>
+            <color>Black</color>
+            <color>Red</color>
+        </colors>
+        <sizes>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+            <size>XL</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/3ab3f966526a632f5b6037371ecc2967.png?bg=FFF</image_url>
+    </product>
+
+    <product>
+        <name>Shirt</name>
+        <price>29.99</price>
+        <quantity>25</quantity>
+        <category>Apparel</category>
+        <subcategory>Formal</subcategory>
+        <material>Cotton</material>
+        <brand>ZARA</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.8">
+            <reviews>450</reviews>
+        </rating>
+        <release_date>2023-07-20</release_date>
+        <tags>
+            <tag>formal</tag>
+            <tag>cotton</tag>
+            <tag>business</tag>
+        </tags>
+        <colors>
+            <color>White</color>
+            <color>Black</color>
+        </colors>
+        <sizes>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/9ffa083a69e5ad5dcefd304c1c3e6745</image_url>
+    </product>
+
+    <product>
+        <name>Track Pants</name>
+        <price>60.00</price>
+        <previous_price>90.00</previous_price>
+        <quantity>25</quantity>
+        <category>Apparel</category>
+        <subcategory>Activewear</subcategory>
+        <material>Polyester</material>
+        <brand>Nike</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.4">
+            <reviews>79</reviews>
+        </rating>
+        <release_date>2023-09-15</release_date>
+        <tags>
+            <tag>active</tag>
+            <tag>comfort</tag>
+            <tag>sports</tag>
+        </tags>
+        <colors>
+            <color>LightSlateGray</color>
+            <color>DarkSlateGray</color>
+            <color>Lavender</color>
+            <color>Black</color>
+            <color>LightBlue</color>
+            <color>LightCoral</color>
+        </colors>
+        <sizes>
+            <size>XS</size>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/7e7f6a7bf3ad6c4fd60bf11396385793.png?bg=FFF</image_url>
+    </product>
+
+
+
+    <product>
+        <name>Windbreaker Jacket</name>
+        <price>90.00</price>
+        <quantity>12</quantity>
+        <category>Outerwear</category>
+        <subcategory>Sports</subcategory>
+        <material>Water-resistant</material>
+        <brand>Adidas</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.7">
+            <reviews>210</reviews>
+        </rating>
+        <release_date>2023-06-05</release_date>
+        <tags>
+            <tag>outdoor</tag>
+            <tag>sports</tag>
+            <tag>windbreaker</tag>
+        </tags>
+        <colors>
+            <color>SteelBlue</color>
+            <color>Black</color>
+        </colors>
+        <sizes>
+            <size>S</size>
+            <size>M</size>
+            <size>L</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/4380c104f69c562144b6120190894bb8.png?bg=FFF</image_url>
+    </product>
+
+    <product>
+        <name>Chino Pants</name>
+        <price>65.00</price>
+        <quantity>18</quantity>
+        <category>Apparel</category>
+        <subcategory>Casual</subcategory>
+        <material>Cotton</material>
+        <brand>ZARA</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.6">
+            <reviews>180</reviews>
+        </rating>
+        <release_date>2023-09-10</release_date>
+        <tags>
+            <tag>casual</tag>
+            <tag>cotton</tag>
+            <tag>comfortable</tag>
+        </tags>
+        <colors>
+            <color>Tan</color>
+        </colors>
+        <sizes>
+            <size>30</size>
+            <size>32</size>
+            <size>34</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/bc2df871c44d9ce107324e6aa2443ad0.jpg?bg=FFF</image_url>
+    </product>
+
+    <product>
+        <name>Leather Boots</name>
+        <price>120.00</price>
+        <quantity>10</quantity>
+        <category>Footwear</category>
+        <subcategory>Boots</subcategory>
+        <material>Leather</material>
+        <brand>Timberland</brand>
+        <in_stock>true</in_stock>
+        <rating average="4.9">
+            <reviews>450</reviews>
+        </rating>
+        <release_date>2023-11-15</release_date>
+        <tags>
+            <tag>leather</tag>
+            <tag>boots</tag>
+            <tag>outdoor</tag>
+        </tags>
+        <colors>
+            <color>SaddleBrown</color>
+            <color>Black</color>
+        </colors>
+        <sizes>
+            <size>40</size>
+            <size>45</size>
+            <size>46</size>
+        </sizes>
+        <image_url>https://cdn.aboutstatic.com/file/images/943b0e61e37895b894235416de06a3f2.jpg?bg=FFF</image_url>
+    </product>
+</shop>
