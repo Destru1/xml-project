@@ -124,15 +124,13 @@ function populateNames(xml) {
     names.add(name);
   });
 
-  const nameList = document.getElementById("name-list");
-  nameList.innerHTML = "";
+  
   names.forEach((name) => {
     const li = document.createElement("li");
     const button = document.createElement("button");
     button.textContent = name;
     button.onclick = () => filterByName(name);
     li.appendChild(button);
-    nameList.appendChild(li);
   });
 }
 

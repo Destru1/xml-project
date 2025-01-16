@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="shop.xsl"?>
+<!DOCTYPE shop [
+    <!ELEMENT shop (product+)>
+    <!ELEMENT product (name, price, previous_price?, quantity, category, subcategory, material, brand, in_stock, rating, release_date, tags, colors, sizes, image_url)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT previous_price (#PCDATA)>
+    <!ELEMENT quantity (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT subcategory (#PCDATA)>
+    <!ELEMENT material (#PCDATA)>
+    <!ELEMENT brand (#PCDATA)>
+    <!ELEMENT in_stock (#PCDATA)>
+    <!ELEMENT rating (reviews)>
+    <!ATTLIST rating average CDATA #REQUIRED>
+    <!ELEMENT reviews (#PCDATA)>
+    <!ELEMENT release_date (#PCDATA)>
+    <!ELEMENT tags (tag+)>
+    <!ELEMENT tag (#PCDATA)>
+    <!ELEMENT colors (color+)>
+    <!ELEMENT color (#PCDATA)>
+    <!ELEMENT sizes (size+)>
+    <!ELEMENT size (#PCDATA)>
+    <!ELEMENT image_url (#PCDATA)>
+]>
+
 <shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shop.xsd">
 
     <product>
